@@ -1,215 +1,484 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kurzweil</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kurzweil</title>
 
-<!-- 스와이퍼 -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- 스와이퍼 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- 구글폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- nuosu-sil 폰트 -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nuosu+SIL&display=swap"
+      rel="stylesheet"
+    />
+    <!-- noto sans kr 폰트 -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Nuosu+SIL&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-</head>
-
-<body>
-<!-- 인트로 -->
-<!-- <div class="intro">
+  <body>
+    <!-- 인트로 -->
+    <!-- <div class="intro">
   <div class="intro-title">
     <img src="imgs/Kurzweil_logo_white.png" alt="Kurzweil">
   </div>
   <div class="light-band"></div>
 </div> -->
 
-<!-- 사이트 -->
-<header class="header">
-  <div class="header_con">
-    <div class="logo_box">
-      <div class="logo img_box">
-        <img src="imgs/Kurzweil_logo_white.png" alt="Kurzweil">
+    <!-- 사이트 -->
+    <header class="header">
+      <div class="header_con">
+        <div class="logo_box">
+          <div class="logo img_box">
+            <img src="imgs/Kurzweil_logo_white.png" alt="Kurzweil" />
+          </div>
+        </div>
+        <div class="flex_g_b"></div>
+        <nav class="menu_box">
+          <ul>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Artists</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Service</a></li>
+          </ul>
+        </nav>
+        <div class="ham_box">
+          <div class="hamburger">
+            <div class="ham"></div>
+            <div class="ham"></div>
+            <div class="ham"></div>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="flex_g_b"></div>
-    <nav class="menu_box">
-      <ul>
-        <li><a href="#">Product</a></li>
-        <li><a href="#">Artist</a></li>
-        <li><a href="#">Community</a></li>
-        <li><a href="#">service</a></li>
-      </ul>
-    </nav>
-    <div class="ham_box">
-      <div class="ham"></div>
-      <div class="ham"></div>
-      <div class="ham"></div>  
-   </div>
-  </div>
-</header>
+    </header>
 
-<main class="site-main">
-  <section class="main_banner">
-    <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">Slide 1</div>
-      <!-- <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div> -->
-    </div>
-  </section>
-</main>
+    <section class="main_banner">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide_1">
+            <div class="txt_box">
+              <p>
+                Beyond Sound, Into Emotion
+                <br />
+                Legendary Sound. Timeless Expression
+              </p>
+              <h3>Engineering the Art of Sound</h3>
+            </div>
+          </div>
+          <div class="swiper-slide slide_2"></div>
+          <div class="swiper-slide slide_3"></div>
+        </div>
+      </div>
+    </section>
 
-<footer class="site-footer">
-  <div class="inner">
-    <p>© 2025 Kurzweil Music Systems. All Rights Reserved.</p>
-  </div>
-</footer>
+    <section class="divide">
+      <div class="divide_box"></div>
+    </section>
 
+    <section class="sec_1">
+      <div class="con">
+        <div class="brand_txt_box">
+          <h3>Innovation</h3>
+          <p>기술과 예술의 융합으로 새로운 사운드를 창조하고 음악적</p>
+          <p>표현의 한계를 확장하는 지속적인 혁신.
+            <span class="highlight_box"></span>
+          </p>
+        </div>
 
-<style>
-/* 노말라이즈 */
-body,ul,li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-a { text-decoration: none; color: inherit; }
-/* 라이브러리 */
+        <div class="img_box brand_1">
+          <img src="imgs/brand_1.png" alt="brand">
+        </div>
 
-.flex {
-  display: flex;
-}
+        <div class="img_box wave">
+          <img src="imgs/brand_1_wave.png" alt="brand_wave">
+        </div>
+      </div>
+    </section>
 
-.flex_g_b {
-  flex-grow: 1;
-  flex-basis: 0;
-}
+    <footer class="site-footer">
+      <div class="inner">
+        <p>© 2025 Kurzweil Music Systems. All Rights Reserved.</p>
+      </div>
+    </footer>
 
-/* 공통 */
-body {
-  background: #000;
-  font-family: "Pretendard", sans-serif;
-  overflow-x: hidden;
-}
+    <style>
+      /* 폰트 */
+      @import url("//fonts.googleapis.com/earlyaccess/jejumyeongjo.css");
 
-.img_box > img {
-  display: block;
-  width : 100%;
-}
+      .nuosu-sil-regular {
+        font-family: "Nuosu SIL", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
 
-/* 커스텀 */
-/* --------------- 인트로 --------------- */
-.intro {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  background: #000;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  z-index: 10;
-  animation: introFadeOut 1s ease-out forwards;
-  animation-delay: 3s;
-}
+      .noto-sans-kr {
+        font-family: "Noto Sans KR", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+      }
 
-@keyframes introFadeOut {
-  0% { opacity: 1; }
-  100% { opacity: 0; visibility: hidden; }
-}
+      /* 노말라이즈 */
+      body,
+      ul,
+      li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
 
-.intro-title {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-  transform: translateY(-50%);
-  opacity: 0;
-  animation: textFadeIn 1.5s ease-out forwards;
-}
+      p,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin: 0;
+      }
 
-@keyframes textFadeIn {
-  0% { opacity: 0; transform: translateY(-50%) scale(1.05); }
-  100% { opacity: 1; transform: translateY(-50%) scale(1); }
-}
+      /* 라이브러리 */
 
-/* 대각선 빛 */
-.light-band {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 250vw;
-  height: 4vh;
-  background: white;
-  transform: translate(-50%, -50%) rotate(35deg);
-  filter: blur(40px);
-  opacity: 0;
-  animation: lightExpand 2s ease-out 1.3s forwards;
-}
+      .flex {
+        display: flex;
+      }
 
-@keyframes lightExpand {
-  0% { opacity: 0; height: 4vh; filter: blur(20px); }
-  20% { opacity: 1; }
-  100% { opacity: 1; height: 200vh; filter: blur(130px); }
-}
+      .flex_g_b {
+        flex-grow: 1;
+        flex-basis: 0;
+      }
 
-/* --------------- 사이트 --------------- */
+      /* 공통 */
+      body {
+        background: #000;
+        font-family: "Pretendard", sans-serif;
+        overflow-x: hidden;
+      }
 
-.header {
-  width: 100%;
-  /* 임시 */
-  background: black;
-  color: white;
-  position: fixed;
-  top: 0;
-  z-index: 5;
-}
+      .img_box > img {
+        display: block;
+        width: 100%;
+      }
 
-.header .header_con {
-  display: flex;
-  align-items: center;
-  max-width: 1650px;
-  margin-inline: auto;
-  gap : 60px;
-  border :solid 1px white;
-}
+      .con {
+        max-width: 1500px;
+        margin-inline: auto;
+      }
 
-.header .menu_box {
-  display: flex;
-  height: 100%;
-  border : solid 1px gold;
-}
+      /* 커스텀 */
+      /* --------------- 인트로 --------------- */
+      .intro {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background: #000;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        z-index: 10;
+        animation: introFadeOut 1s ease-out forwards;
+        animation-delay: 3s;
+      }
 
-.header .menu_box > ul {
-  display: flex;
+      @keyframes introFadeOut {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+          visibility: hidden;
+        }
+      }
 
-}
+      .intro-title {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        transform: translateY(-50%);
+        opacity: 0;
+        animation: textFadeIn 1.5s ease-out forwards;
+      }
 
-.header .ham_box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  height: 18px;
-}
+      @keyframes textFadeIn {
+        0% {
+          opacity: 0;
+          transform: translateY(-50%) scale(1.05);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(-50%) scale(1);
+        }
+      }
 
-.header .ham_box .ham {
-  width : 30px;
-  height: 2px;
-  background-color: #D9D9D9;
-}
+      /* 대각선 빛 */
+      .light-band {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 250vw;
+        height: 4vh;
+        background: white;
+        transform: translate(-50%, -50%) rotate(35deg);
+        filter: blur(40px);
+        opacity: 0;
+        animation: lightExpand 2s ease-out 1.3s forwards;
+      }
 
+      @keyframes lightExpand {
+        0% {
+          opacity: 0;
+          height: 4vh;
+          filter: blur(20px);
+        }
+        20% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 1;
+          height: 200vh;
+          filter: blur(130px);
+        }
+      }
 
-</style>
-<script>
+      /* --------------- 사이트 --------------- */
 
-  // 메인배너 - 스와이퍼 시작
-    var swiper = new Swiper(".mySwiper", {
-      spaceBetween: 30,
-      centeredSlides: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-    });
-    // 메인배너 - 스와이퍼 끝
-  </script>
+      /* 헤더 시작 */
 
-</body>
+      .header {
+        font-family: "Noto Sans KR", sans-serif;
+        width: 100%;
+        color: #d9d9d9;
+        position: fixed;
+        top: 0;
+        z-index: 5;
+      }
+
+      .header .header_con {
+        display: flex;
+        max-width: 1650px;
+        margin-inline: auto;
+        gap: 60px;
+        height: 80px;
+      }
+      
+      .header .logo_box {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        border : solid 1px red;
+      }
+
+      .header .menu_box {
+        display: flex;
+        font-size: 18px;
+      }
+
+      .header .menu_box > ul {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+      }
+
+      .header .menu_box > ul > li {
+        height: 100%;
+        display: flex;
+        align-items: center;
+      }
+
+      .header .menu_box > ul > li > a:hover {
+        color: white;
+      }
+
+      .header .ham_box {
+        display: flex;
+        align-items: center;
+      }
+
+      .header .ham_box .hamburger {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 16px;
+      }
+
+      .header .ham_box .hamburger .ham {
+        width: 30px;
+        height: 2px;
+        background-color: #d9d9d9;
+      }
+      /* 헤더 끝 */
+
+      /* 메인배너 시작 */
+
+      .main_banner {
+        width: 100vw;
+        height: 100vh;
+      }
+
+      .main_banner .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .main_banner .swiper .slide_1 {
+        background: url(imgs/main_banner_1.png) no-repeat center;
+        position: relative;
+      }
+
+      .main_banner .swiper .slide_1 .txt_box {
+        font-family: "Nuosu SIL", sans-serif;
+        position: absolute;
+        right: 135px;
+        bottom: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        color: white;
+        text-align: end;
+      }
+
+      .main_banner .swiper .slide_1 .txt_box p {
+        font-size: 32px;
+      }
+
+      .main_banner .swiper .slide_1 .txt_box h3 {
+        font-size: 70px;
+        font-weight: 300;
+      }
+
+      .main_banner .swiper .slide_2 {
+        background: url(imgs/main_banner_1.png) no-repeat center;
+      }
+
+      .main_banner .swiper .slide_3 {
+        background: url(imgs/main_banner_1.png) no-repeat center;
+      }
+
+      /* 메인배너 끝 */
+
+      /* divide 1 시작 */
+
+      .divide {
+        height: 750px;
+        position: relative;
+      }
+
+      .divide .divide_box {
+        position: absolute;
+        width: 2px;
+        height: 180px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background: linear-gradient(
+          rgba(255, 255, 255, 0) 0%,
+          rgba(255, 255, 255, 1) 50%,
+          rgba(255, 255, 255, 0) 100%
+        );
+      }
+
+      /* divide 1 끝 */
+
+      /* 섹션1~3 공통 */
+
+      .brand_txt_box > h3 {
+        font-family: "Nuosu SIL", sans-serif;
+        color: #fff;
+        font-size: 80px;
+        font-weight: 300;
+        margin-bottom: 15px;
+      }
+      
+      .brand_txt_box > p {
+        position: relative;
+        font-family: "Jeju Myeongjo";
+        color: #999999;
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      .highlight_box {
+        position: absolute;
+        background-color: rgba(87, 113, 231, 0.4);
+        height: 32px;
+      }
+
+      /* 섹션1 시작 */
+      .sec_1 {
+        position: relative;
+      }
+
+      .sec_1 .brand_txt_box {
+        text-align: center;
+      }
+
+      .sec_1 .highlight_box {
+        width: 150px;
+        top: 50%;
+        transform: translateY(-50%);
+        right : 556px;
+        z-index: -1;
+      }
+
+      .sec_1 .brand_1 {
+        margin-top: 140px;
+        margin-bottom: 260px;
+      }
+
+      .sec_1 .wave {
+        position: absolute;
+        top :150px;
+        left: 50%;
+        transform: translateX(-50%);
+        width : 100%;
+        z-index: -1;
+      }
+
+      /* 섹션1 끝 */
+
+      /* 섹션2 시작 */
+
+      /* 섹션2 끝 */
+
+      /* 섹션3 시작 */
+
+      /* 섹션3 끝 */
+
+      /* 섹션4 시작 */
+
+      /* 섹션4 끝 */
+
+      /* 섹션5 시작 */
+
+      /* 섹션5 끝 */
+    </style>
+    <!-- <script>
+      // 메인배너 - 스와이퍼 시작
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+      });
+      // 메인배너 - 스와이퍼 끝
+    </script> -->
+  </body>
 </html>
