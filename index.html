@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kurzweil</title>
+
+<!-- 스와이퍼 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+<!-- 인트로 -->
+<!-- <div class="intro">
+  <div class="intro-title">
+    <img src="imgs/Kurzweil_logo_white.png" alt="Kurzweil">
+  </div>
+  <div class="light-band"></div>
+</div> -->
+
+<!-- 사이트 -->
+<header class="header">
+  <div class="header_con">
+    <div class="logo_box">
+      <div class="logo img_box">
+        <img src="imgs/Kurzweil_logo_white.png" alt="Kurzweil">
+      </div>
+    </div>
+    <div class="flex_g_b"></div>
+    <nav class="menu_box">
+      <ul>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Artist</a></li>
+        <li><a href="#">Community</a></li>
+        <li><a href="#">service</a></li>
+      </ul>
+    </nav>
+    <div class="ham_box">
+      <div class="ham"></div>
+      <div class="ham"></div>
+      <div class="ham"></div>  
+   </div>
+  </div>
+</header>
+
+<main class="site-main">
+  <section class="main_banner">
+    <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">Slide 1</div>
+      <!-- <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div> -->
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="inner">
+    <p>© 2025 Kurzweil Music Systems. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+<style>
+/* 노말라이즈 */
+body,ul,li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a { text-decoration: none; color: inherit; }
+/* 라이브러리 */
+
+.flex {
+  display: flex;
+}
+
+.flex_g_b {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+/* 공통 */
+body {
+  background: #000;
+  font-family: "Pretendard", sans-serif;
+  overflow-x: hidden;
+}
+
+.img_box > img {
+  display: block;
+  width : 100%;
+}
+
+/* 커스텀 */
+/* --------------- 인트로 --------------- */
+.intro {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 10;
+  animation: introFadeOut 1s ease-out forwards;
+  animation-delay: 3s;
+}
+
+@keyframes introFadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; visibility: hidden; }
+}
+
+.intro-title {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translateY(-50%);
+  opacity: 0;
+  animation: textFadeIn 1.5s ease-out forwards;
+}
+
+@keyframes textFadeIn {
+  0% { opacity: 0; transform: translateY(-50%) scale(1.05); }
+  100% { opacity: 1; transform: translateY(-50%) scale(1); }
+}
+
+/* 대각선 빛 */
+.light-band {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 250vw;
+  height: 4vh;
+  background: white;
+  transform: translate(-50%, -50%) rotate(35deg);
+  filter: blur(40px);
+  opacity: 0;
+  animation: lightExpand 2s ease-out 1.3s forwards;
+}
+
+@keyframes lightExpand {
+  0% { opacity: 0; height: 4vh; filter: blur(20px); }
+  20% { opacity: 1; }
+  100% { opacity: 1; height: 200vh; filter: blur(130px); }
+}
+
+/* --------------- 사이트 --------------- */
+
+.header {
+  width: 100%;
+  /* 임시 */
+  background: black;
+  color: white;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+}
+
+.header .header_con {
+  display: flex;
+  align-items: center;
+  max-width: 1650px;
+  margin-inline: auto;
+  gap : 60px;
+  border :solid 1px white;
+}
+
+.header .menu_box {
+  display: flex;
+  height: 100%;
+  border : solid 1px gold;
+}
+
+.header .menu_box > ul {
+  display: flex;
+
+}
+
+.header .ham_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 18px;
+}
+
+.header .ham_box .ham {
+  width : 30px;
+  height: 2px;
+  background-color: #D9D9D9;
+}
+
+
+</style>
+<script>
+
+  // 메인배너 - 스와이퍼 시작
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+    });
+    // 메인배너 - 스와이퍼 끝
+  </script>
+
+</body>
+</html>
